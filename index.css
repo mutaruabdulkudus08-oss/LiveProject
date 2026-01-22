@@ -1,0 +1,921 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    width: 100vw;
+    background-color: rgb(0, 144, 127);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+}
+
+.header img {
+    width: 70px;
+    margin-left: 50px;
+    border-radius: 50%;
+    z-index: 5;
+    cursor: pointer;
+
+}
+
+.header img:hover{
+    scale: 1.08;
+    transition: 0.5s;
+    
+}
+
+.servicesclick {
+    font-size: larger;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.619);
+    padding: 5px 15px 5px 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    border-style: solid;
+    border-color: white;
+    position: relative;
+
+    
+
+}
+
+.servicesclick:hover{
+    scale: 1.08;
+    transition: 0.5s;
+
+}
+
+.requestbtn {
+    font-size: larger;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.619);
+    padding: 5px 15px 5px 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-right: 50px;
+    border-style: solid;
+    border-color: white;
+    line-height: 20px;
+    text-align: center;
+}
+
+.requestbtn:hover{
+    scale: 1.08;
+    transition: 0.5s;
+
+}
+
+.resplinks ul {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    font-size: larger;
+}
+
+.resplinks ul li {
+    font-size: larger;
+    color: white;
+    
+}
+
+.resplinks ul a{
+    text-decoration: none;
+}
+
+.active{
+    text-decoration: none;
+    border-bottom: 4px solid  rgba(255, 0, 0, 0.619);
+}
+
+
+.hov:hover{
+    border-bottom: 4px solid white;
+}
+
+.links {
+    position: absolute;
+    top: 65px;
+    right: 285px;
+    background-color: rgba(39, 38, 38, 0.648);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    width: 150px;
+    height: 160px;
+    align-content: center;
+    margin-top: -900px;
+    transition: 0.8s;
+    white-space: nowrap;
+    width: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    list-style-position: inside;
+
+}
+
+.links a li{
+    color: white;
+}
+
+.viewlinks {
+    margin-top: 0;
+
+}
+
+.hero {
+    margin-top: 50px;
+    background-image: url(./assets/KUDUS\ BUSINESS\ MOCKUP.png);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.534);
+    width: 100%;
+    height: 100%;
+
+}
+
+.hero h1 {
+    position: absolute;
+    background-color: rgb(97, 155, 22);
+    width: 100px;
+    height: 50px;
+    top: 110px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+}
+
+.hero h2 {
+    position: absolute;
+    background-color: rgb(97, 155, 22);
+    width: 100px;
+    height: 50px;
+    top: 110px;
+    right: 0;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.hero h3 {
+    position: absolute;
+    background-color: rgb(97, 155, 22);
+    width: 100px;
+    height: 50px;
+    bottom: 110px;
+    right: 0;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.hero h4 {
+    position: absolute;
+    background-color: rgb(97, 155, 22);
+    width: 100px;
+    height: 50px;
+    bottom: 110px;
+    left: 0;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.scroll{
+    animation: scroll 10s linear infinite;
+    line-height: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white; 
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.brief-services {
+    padding: 20px;
+
+}
+
+.brief-services article {
+    margin-top: 10px;
+    font-size: x-large;
+}
+
+.graphics {
+    background-color: rgba(0, 144, 127, 0.741);
+    padding: 20px;
+
+
+}
+
+.graphics article {
+    margin-top: 10px;
+    font-size: x-large;
+
+}
+
+.web-development {
+    background-color: rgba(0, 144, 127, 0.741);
+    padding: 20px;
+
+}
+
+.web-development article {
+    margin-top: 10px;
+    font-size: x-large;
+}
+
+.bothservices {
+    margin-top: 10px;
+    padding: 20px;
+
+}
+
+.bothservices h1{
+    color:rgba(255, 0, 0, 0.62); 
+    text-align: center;
+
+}
+
+
+.advertflyer {
+    border-radius: 7px;
+
+}
+
+.advertflyer img {
+    width: 400px;
+    border-radius: 7px;
+
+}
+
+.advertflyer img:hover{
+    scale: 1.02;
+    transition: 0.5s;
+    box-shadow: 0 0 8px;
+}
+
+.ad-fly-serv {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 144, 127, 0.741);
+    border-radius: 7px;
+    box-shadow: 0 0 10px grey;
+    padding: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.ad-fly-serv article {
+    font-size: 25px;
+    margin-top: 5px;
+
+}
+
+
+
+.fly-showing-bold{
+    color:rgb(0, 11, 128);
+    font-size: 25px;
+
+}
+
+.discount {
+    padding: 20px;
+
+
+
+}
+
+.discount article {
+    margin-top: 10px;
+    font-size: x-large;
+
+}
+
+.about {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: aqua;
+   
+
+
+}
+
+.about-items {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.about-items article {
+    font-size: x-large;
+    box-shadow: 0 0 10px red;
+    padding: 10px;
+    border-radius: 6px;
+    width: 800px;
+  
+}
+
+.about-img h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 8px;
+
+}
+
+.about-img img {
+    width: 350px;
+    border-radius: 7px;
+
+}
+
+.about-img img:hover{
+    scale: 1.02;
+    transition: 0.5s;
+    box-shadow: 0 0 8px;
+
+}
+
+.contact {
+    background-color: rgb(36, 32, 32);
+    padding: 50px;
+}
+
+.contact ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    gap: 80px;
+}
+
+.contact ul li{
+    font-size: 23px;
+    color: white;
+}
+
+.call img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.call {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.whatsApp img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.whatsApp {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.facebook img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.facebook {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tiktok img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.tiktok {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.email img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer small {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.humbeRequest {
+    position: relative;
+
+}
+
+.menubtn {
+    position: absolute;
+    right: 200px;
+    top: -11px;
+    display: none;
+}
+
+.menubtn img {
+    background-color: rgb(204, 188, 188);
+    padding: 5px;
+    width: 50px;
+
+}
+
+.addlinks{
+    display: none;
+
+}
+
+
+
+/* Mobile responsive styling */
+@media (max-width: 480px) {
+    .advertflyer img {
+        width: 300px;
+    }
+
+    .about-items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .hero {
+        height: 440px;
+        margin-top: 80px;
+    }
+
+    .hero h1 {
+        top: 65px;
+        left: -40px;
+    }
+
+    .hero h2 {
+        top: 65px;
+        right: -40px;
+
+    }
+
+    .hero h3 {
+        bottom: 30px;
+        right: -40px;
+
+
+    }
+
+    .hero h4 {
+        bottom: 30px;
+        left: -40px;
+
+    }
+
+    .header {
+        width: 100vw;
+        background-color: rgb(0, 144, 127);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: fixed;
+        top: 0;
+        z-index: 4;
+
+    }
+
+    .header img {
+        width: 70px;
+        margin-left: 20px;
+
+    }
+
+    .menubtn {
+        right: 140px;
+        top: -1px;
+        display: block;
+    }
+
+    .menubtn img {
+        width: 45px;
+
+    }
+
+    .requestbtn {
+        margin-right: 20px;
+    }
+
+    .hero h2 {
+        right: 0;
+        width: 66px;
+        top: 70px;
+    }
+
+    .hero h3 {
+        right: 0;
+        width: 66px;
+        bottom: 30px;   
+    }
+
+    .servicesclick {
+        position: unset;
+        display: none;
+    }
+
+    .resplinks{
+        position: relative;
+
+    }
+
+    .resplinks .ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        font-size: larger;
+        background-color: rgba(39, 38, 38, 0.648);
+        position: absolute;
+        top: 25px;
+        white-space: nowrap;
+        left: -115px;
+        justify-content: space-evenly;
+        padding: 50px;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        height: 300px;
+        /* display: none; */
+        margin-top: -900px;
+        transition: 0.8s;
+
+        
+        
+        /* To center absolute objects only using top and left for the process
+        left: 50%;
+        transform: translateX(-50%);  */
+    }
+
+    .resplinks .ul.view_menulinks  {
+        /* display: flex; */
+        margin-top: 0;
+    }
+
+    .resplinks .ul ul{
+        flex-direction: column;
+        gap: 15px;
+        align-self: center;
+ 
+        
+    }
+
+    .resplinks .ul ul a{
+        text-decoration: none;
+
+    }
+
+    .resplinks .ul ol a{
+        text-decoration: none;
+
+    }
+
+    .active{
+        width: fit-content;
+    }
+    
+    .hov:hover{
+        width: fit-content;
+    }
+    
+    
+    .links {
+        position: unset;
+        top: unset;
+        right: unset;
+        background-color: unset;
+        padding: unset;
+        border-bottom-right-radius: unset;
+        border-bottom-left-radius: unset;
+        transition: unset;
+        z-index: 3;
+        width: unset;
+        height: unset;
+        align-content: unset;
+        margin-top: unset;
+        transition: unset;
+        display: none;
+    
+    }
+
+    .linkcolor1 {
+        color: white;
+        font-size: larger;
+    }
+    
+    .linkcolor2 {
+        color: white;
+        font-size: larger;
+    }
+
+    .addlinks{
+        display: block;
+  
+
+    }
+
+    .addlinks ol{
+        display: flex;
+        flex-direction: column;
+        list-style-position: inside;
+        gap: 15px;
+    }
+
+    .addlinks ol a{
+        text-decoration-color: white;
+    }
+
+    .email {
+        flex-direction: column;
+        margin-left: -35px;
+    }
+
+    .discount h1{
+        font-size: 28px;
+
+    }
+    
+    .bothservices h1{
+        text-align: left;
+        font-size: 25px;
+    }
+
+    .about-items article {
+        box-shadow: unset;
+        padding: unset;
+        border-radius: unset;
+        width: unset;
+        
+    }
+
+}
+
+/* Tablet responsive styling */
+@media (min-width: 481px) and (max-width: 768px) {
+    .servicesclick {
+        position: unset;
+        display: none;
+    }
+
+    .resplinks{
+        position: relative;
+
+    }
+
+    .resplinks .ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        font-size: x-large;
+        background-color: rgba(39, 38, 38, 0.648);;
+        position: absolute;
+        top: 25px;
+        white-space: nowrap;
+        left: -127px;
+        justify-content: space-evenly;
+        padding: 43px;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        height: 330px;
+        /* display: none; */
+        margin-top: -900px;
+        transition: 0.8s;
+        
+        
+        /* To center absolute objects only using top and left for the process
+        left: 50%;
+        transform: translateX(-50%);  */
+    }
+
+    .menubtn {
+        right: 180px;
+        top: -3px;
+        display: block;
+    }
+
+    .menubtn img {
+        width: 50px;
+    }
+
+    .resplinks .ul.view_menulinks  {
+        /* display: flex; */
+        margin-top: 0;
+    }
+
+    .resplinks .ul ul{
+        flex-direction: column;
+        gap: 15px;
+        align-self: center;
+        
+    }
+
+    .resplinks .ul ul a{
+        text-decoration: none;
+    }
+
+    .resplinks .ul ol a{
+        text-decoration: none;
+
+    }
+
+    .active{
+        border-bottom: none;
+
+    }
+
+    .resplinks .ul ul a{
+        text-decoration-color: white;
+    }
+
+    .links {
+        position: unset;
+        top: unset;
+        right: unset;
+        background-color: unset;
+        padding: unset;
+        border-bottom-right-radius: unset;
+        border-bottom-left-radius: unset;
+        transition: unset;
+        z-index: 3;
+        width: unset;
+        height: unset;
+        align-content: unset;
+        margin-top: unset;
+        transition: unset;
+        display: none;
+    
+    }
+
+    .links a {
+        color: white;
+        text-decoration: underline;
+        font-size: 20px;
+    
+    }
+
+    .linkcolor1 {
+        color: white;
+        font-size: larger;
+    }
+    
+    .linkcolor2 {
+        color: white;
+        font-size: larger;
+    }
+
+    .addlinks{
+        display: block;
+  
+
+    }
+
+    .addlinks ol{
+        display: flex;
+        flex-direction: column;
+        list-style-position: inside;
+        gap: 15px;
+    }
+
+    .addlinks ol a{
+        text-decoration-color: white;
+    }
+
+    .header img {
+        width: 70px;
+        margin-left: 50px;
+        border-radius: 50%;
+    
+    }
+
+    .menubtn img {
+        width: 50px;
+
+    }
+
+    .about-items {
+        flex-direction: column;
+        gap: 10px;
+   
+    }
+
+    .about-items article {
+        box-shadow: unset;
+        padding: unset;
+        border-radius: unset;
+        width: unset;
+  
+    }
+
+    .hero {
+        height: 440px;
+        margin-top: 80px;
+    }
+
+    .hero h2 {
+        right: 0;
+        width: 66px;
+        top: 70px;
+    }
+
+    .hero h3 {
+        right: 0;
+        width: 66px;
+        bottom: 30px;   
+    }
+
+    .hero h4 {
+        width: 66px;
+        bottom: 30px;
+ 
+       
+    }
+
+    .hero h1 {
+        width: 66px;
+        top: 70px;
+    }
+
+    
+    .email {
+        margin-left: -15px;
+    }
+
+    .about-items article {
+        box-shadow: unset;
+        padding: unset;
+        border-radius: unset;
+    }
+
+    .resplinks ul li{
+        color: white
+    }
+
+}
+
+/* Desktop or Laptop responsive styling */
+@media (min-width: 769px) {}
