@@ -24,7 +24,7 @@ html {
 }
 
 .header img {
-    width: 70px;
+    width: 60px;
     margin-left: 50px;
     border-radius: 50%;
     z-index: 5;
@@ -41,7 +41,7 @@ html {
 .servicesclick {
     font-size: larger;
     color: white;
-    background-color: rgba(255, 0, 0, 0.619);
+    background-color: transparent;
     padding: 5px 15px 5px 15px;
     border-radius: 12px;
     cursor: pointer;
@@ -62,8 +62,8 @@ html {
 .requestbtn {
     font-size: larger;
     color: white;
-    background-color: rgba(255, 0, 0, 0.619);
-    padding: 5px 15px 5px 15px;
+    background-color: transparent;
+    padding: 7px 15px 7px 15px;
     border-radius: 12px;
     cursor: pointer;
     margin-right: 50px;
@@ -145,6 +145,7 @@ html {
     margin-top: 0;
 
 }
+
 
 .hero {
     margin-top: 50px;
@@ -235,28 +236,33 @@ html {
     font-size: x-large;
 }
 
-.graphics {
-    background-color: rgba(0, 144, 127, 0.741);
+.restruc {
+    display: flex;
     padding: 20px;
-
-
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+   
 }
 
-.graphics article {
-    margin-top: 10px;
-    font-size: x-large;
-
-}
-
-.web-development {
-    background-color: rgba(0, 144, 127, 0.741);
+.restruc section {
+    max-width: 600px;
+    /* background-color: rgba(194, 184, 184, 0.229); */
+    border-radius: 10px;
     padding: 20px;
+    box-shadow: 0 0 10px grey;
+ 
+   
 
 }
 
-.web-development article {
-    margin-top: 10px;
+.restruc section h1 {
+    color: rgba(255, 0, 0, 0.619)
+}
+
+.restruc section article {
     font-size: x-large;
+    margin-top: 10px;
 }
 
 .bothservices {
@@ -311,7 +317,7 @@ html {
 
 
 .fly-showing-bold{
-    color:rgb(0, 11, 128);
+    color:white;
     font-size: 25px;
 
 }
@@ -474,7 +480,7 @@ footer small {
 }
 
 .menubtn img {
-    background-color: rgb(204, 188, 188);
+    background-color: rgba(255, 255, 255, 0.707);
     padding: 5px;
     width: 50px;
 
@@ -484,6 +490,10 @@ footer small {
     display: none;
 
 }
+
+
+
+
 
 
 
@@ -507,7 +517,7 @@ footer small {
 
     .hero h1 {
         top: 65px;
-        left: -40px;
+        left: -70px;
     }
 
     .hero h2 {
@@ -525,7 +535,7 @@ footer small {
 
     .hero h4 {
         bottom: 30px;
-        left: -40px;
+        left: -70px;
 
     }
 
@@ -544,14 +554,14 @@ footer small {
     }
 
     .header img {
-        width: 70px;
+        width: 60px;
         margin-left: 20px;
 
     }
 
     .menubtn {
         right: 140px;
-        top: -1px;
+        top: -7px;
         display: block;
     }
 
@@ -565,13 +575,11 @@ footer small {
     }
 
     .hero h2 {
-        right: 0;
         width: 66px;
         top: 70px;
     }
 
     .hero h3 {
-        right: 0;
         width: 66px;
         bottom: 30px;   
     }
@@ -595,7 +603,7 @@ footer small {
         position: absolute;
         top: 25px;
         white-space: nowrap;
-        left: -115px;
+        left: -106px;
         justify-content: space-evenly;
         padding: 50px;
         border-bottom-left-radius: 60px;
@@ -701,7 +709,7 @@ footer small {
     }
     
     .bothservices h1{
-        text-align: left;
+        text-align: center;
         font-size: 25px;
     }
 
@@ -736,7 +744,7 @@ footer small {
         position: absolute;
         top: 25px;
         white-space: nowrap;
-        left: -127px;
+        left: -120px;
         justify-content: space-evenly;
         padding: 43px;
         border-bottom-left-radius: 60px;
@@ -754,7 +762,7 @@ footer small {
 
     .menubtn {
         right: 180px;
-        top: -3px;
+        top: -10px;
         display: block;
     }
 
@@ -784,12 +792,20 @@ footer small {
     }
 
     .active{
-        border-bottom: none;
+        border-bottom: 4px solid  rgba(255, 0, 0, 0.619);
 
     }
 
     .resplinks .ul ul a{
         text-decoration-color: white;
+    }
+
+    .active{
+        width: fit-content;
+    }
+    
+    .hov:hover{
+        width: fit-content;
     }
 
     .links {
@@ -846,7 +862,7 @@ footer small {
     }
 
     .header img {
-        width: 70px;
+        width: 60px;
         margin-left: 50px;
         border-radius: 50%;
     
