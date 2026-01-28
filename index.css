@@ -518,17 +518,21 @@ footer small {
     .hero h1 {
         top: 65px;
         left: -70px;
+        display: none;
+
     }
 
     .hero h2 {
         top: 65px;
         right: -40px;
+        display: none;
 
     }
 
     .hero h3 {
         bottom: 30px;
         right: -40px;
+        display: none;
 
 
     }
@@ -536,6 +540,7 @@ footer small {
     .hero h4 {
         bottom: 30px;
         left: -70px;
+        display: none;
 
     }
 
