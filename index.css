@@ -15,8 +15,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 10px 0 10px 0;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -48,6 +47,8 @@ html {
     border-style: solid;
     border-color: white;
     position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 
     
 
@@ -71,6 +72,8 @@ html {
     border-color: white;
     line-height: 20px;
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .requestbtn:hover{
@@ -89,6 +92,8 @@ html {
 .resplinks ul li {
     font-size: larger;
     color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
     
 }
 
@@ -135,10 +140,13 @@ html {
     font-size: 25px;
     list-style-position: inside;
 
+
 }
 
 .links a li{
     color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .viewlinks {
@@ -210,6 +218,8 @@ html {
     border-bottom-right-radius: 100px;
 }
 
+
+/*
 .scroll{
     animation: scroll 10s linear infinite;
     line-height: 20px;
@@ -225,15 +235,39 @@ html {
         transform: translateX(-100%);
     }
 }
+*/
+
+
+
+
+.scroll{
+    animation: bounce 1s ease-in-out infinite;
+    line-height: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white; 
+}
+
+@keyframes bounce{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+
 
 .brief-services {
     padding: 20px;
 
 }
 
+
+
 .brief-services article {
     margin-top: 10px;
-    font-size: x-large;
+    font-size: 20px;
 }
 
 .restruc {
@@ -257,22 +291,23 @@ html {
 }
 
 .restruc section h1 {
-    color: rgba(255, 0, 0, 0.619)
+    color:rgba(255, 0, 0, 0.839);
 }
 
 .restruc section article {
-    font-size: x-large;
+    font-size: 20px;
     margin-top: 10px;
 }
 
 .bothservices {
     margin-top: 10px;
     padding: 20px;
+    background-color: aqua;
 
 }
 
 .bothservices h1{
-    color:rgba(255, 0, 0, 0.62); 
+    color:rgba(255, 0, 0, 0.839);
     text-align: center;
 
 }
@@ -292,24 +327,23 @@ html {
 .advertflyer img:hover{
     scale: 1.02;
     transition: 0.5s;
-    box-shadow: 0 0 8px;
+   
 }
 
 .ad-fly-serv {
     display: flex;
     justify-content: space-around;
-    background-color: rgba(0, 144, 127, 0.741);
     border-radius: 7px;
     box-shadow: 0 0 10px grey;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 30px 10px 30px 10px;
+    margin-top: 25px;
     flex-wrap: wrap;
     align-items: center;
 
 }
 
 .ad-fly-serv article {
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 5px;
 
 }
@@ -317,8 +351,8 @@ html {
 
 
 .fly-showing-bold{
-    color:white;
-    font-size: 25px;
+    color:rgb(255, 0, 0);
+    font-size: 20px;
 
 }
 
@@ -331,7 +365,7 @@ html {
 
 .discount article {
     margin-top: 10px;
-    font-size: x-large;
+    font-size: 20px;
 
 }
 
@@ -349,12 +383,14 @@ html {
     gap: 50px;
     align-items: center;
     justify-content: center;
+    margin-top: 8px;
+
    
 }
 
 .about-items article {
-    font-size: x-large;
-    box-shadow: 0 0 10px red;
+    font-size: 20px;
+    box-shadow: 0 0 10px grey;
     padding: 10px;
     border-radius: 6px;
     width: 800px;
@@ -365,6 +401,7 @@ html {
     text-align: center;
     font-size: 25px;
     margin-top: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
@@ -377,7 +414,7 @@ html {
 .about-img img:hover{
     scale: 1.02;
     transition: 0.5s;
-    box-shadow: 0 0 8px;
+  
 
 }
 
@@ -397,7 +434,7 @@ html {
 }
 
 .contact ul li{
-    font-size: 23px;
+    font-size: 20px;
     color: white;
 }
 
@@ -406,55 +443,34 @@ html {
     border-radius: 50%;
 }
 
-.call {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+
 
 .whatsApp img {
     width: 50px;
     border-radius: 50%;
 }
 
-.whatsApp {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+
 
 .facebook img {
     width: 50px;
     border-radius: 50%;
 }
 
-.facebook {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+
 
 .tiktok img {
     width: 50px;
     border-radius: 50%;
 }
 
-.tiktok {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
 .email img {
     width: 50px;
     border-radius: 50%;
 }
 
-.email {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+
 
 footer small {
     background-color: black;
@@ -519,7 +535,6 @@ footer small {
         top: 65px;
         left: -70px;
         display: none;
-
     }
 
     .hero h2 {
@@ -550,8 +565,7 @@ footer small {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 10px 0 10px 0;
         position: fixed;
         top: 0;
         z-index: 4;
@@ -611,12 +625,15 @@ footer small {
         left: -106px;
         justify-content: space-evenly;
         padding: 50px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
         border-bottom-left-radius: 60px;
         border-bottom-right-radius: 60px;
         height: 300px;
         /* display: none; */
         margin-top: -900px;
         transition: 0.8s;
+        z-index: -5;
 
         
         
@@ -699,14 +716,16 @@ footer small {
         gap: 15px;
     }
 
+    .addlinks ol li{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+
     .addlinks ol a{
         text-decoration-color: white;
     }
 
-    .email {
-        flex-direction: column;
-        margin-left: -35px;
-    }
+  
 
     .discount h1{
         font-size: 28px;
@@ -718,12 +737,20 @@ footer small {
         font-size: 25px;
     }
 
+    .about-img img{
+        width: 320px;
+    }
+
     .about-items article {
         box-shadow: unset;
         padding: unset;
         border-radius: unset;
         width: unset;
         
+    }
+
+    .contact ul{
+        gap: 20px;
     }
 
 }
@@ -752,6 +779,8 @@ footer small {
         left: -120px;
         justify-content: space-evenly;
         padding: 43px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
         border-bottom-left-radius: 60px;
         border-bottom-right-radius: 60px;
         height: 330px;
@@ -842,11 +871,15 @@ footer small {
     .linkcolor1 {
         color: white;
         font-size: larger;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
     }
     
     .linkcolor2 {
         color: white;
         font-size: larger;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
     }
 
     .addlinks{
@@ -921,15 +954,18 @@ footer small {
         top: 70px;
     }
 
-    
-    .email {
-        margin-left: -15px;
-    }
+  
 
     .about-items article {
         box-shadow: unset;
         padding: unset;
         border-radius: unset;
+    }
+
+    .about-img img {
+        width: 400px;
+
+    
     }
 
     .resplinks ul li{

@@ -1,0 +1,427 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100vw;
+    background-color: rgb(0, 144, 127);
+    padding: 15px 0 15px 0;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    
+
+}
+
+header h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.hero {
+    background-image: url(./assets/3a76692b3512ad3fde555a08e8065394.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.hero h1{
+    color: white;
+    z-index: 1;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+.hero::before{
+    background-color: rgba(0, 0, 0, 0.84);
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+}
+
+.web_overview{
+    padding: 20px;
+}
+
+.web_overview h1{
+    color:rgba(255, 0, 0, 0.839);
+    font-size: 30px;
+}
+
+.web_overview article{
+    margin-top: 10px;
+    font-size: 23px;
+}
+
+.serv_overvi_web{
+    background-color: rgba(0, 144, 127, 0.741);
+    padding: 20px;
+
+
+
+}
+
+.serv_overvi_web h1{
+    color:rgba(255, 0, 0, 0.839);
+    font-size: 30px;
+
+}
+
+.serv_overvi_web article{
+    margin-top: 10px;
+    font-size: 23px;
+
+}
+
+.technologies{
+    padding: 20px;
+    background-color: aqua;
+    box-shadow: 0 0 10px grey;
+
+}
+
+.technologies h1{
+    color:rgba(255, 0, 0, 0.839);
+    font-size: 30px;
+
+}
+
+.technologies article{
+    margin-top: 10px;
+    font-size: 23px;
+    
+
+}
+
+.choose_us{
+    padding: 20px;
+
+
+}
+
+.choose_us h1{
+    color:rgba(255, 0, 0, 0.839);
+    font-size: 30px;
+    
+
+
+}
+
+.choose_us article{
+    margin-top: 10px;
+    font-size: 23px;
+
+
+}
+
+.sample{
+    background-color: rgba(0, 144, 127, 0.741);
+    padding: 10px;
+  
+
+}
+
+.sample h1{
+    text-align: center;
+    color:rgba(255, 0, 0, 0.839);
+    font-size: 40px;
+
+}
+
+.Sitem{
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.Sitem img{
+    width: 500px;
+    border-radius: 6px;
+}
+
+
+
+.sampleItems{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+.videosample{
+    background-color: aqua;
+    padding: 10px 10px 30px 10px;
+    box-shadow: 0 0 10px grey;
+
+  
+
+}
+
+.videosample h1{
+    text-align: center;
+    color:rgba(255, 0, 0, 0.839);
+    font-size: 40px;
+
+
+}
+
+.videoSitem{
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px grey;
+
+
+}
+
+.videoSitem video{
+    width: 300px;
+}
+
+.videosampleItems{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+
+}
+
+.intouch{
+    padding: 20px;
+
+
+}
+
+.intouch h1{
+    color:rgba(255, 0, 0, 0.839);
+    font-size: 30px;
+    
+
+}
+
+.intouch article{
+    margin-top: 10px;
+    font-size: 23px;
+}
+
+.contact {
+    background-color: rgb(36, 32, 32);
+    padding: 50px;
+}
+
+.contact ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    gap: 80px;
+}
+
+.contact ul li{
+    font-size: 23px;
+    color: white;
+}
+
+.call img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+
+.whatsApp img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+
+.facebook img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+
+.tiktok img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+.email img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+footer small {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.scroll{
+    animation: bounce 1s ease-in-out infinite;
+    line-height: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white; 
+}
+
+@keyframes bounce{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+
+
+/*
+.scroll{
+    animation: scroll 10s linear infinite;
+    line-height: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+*/
+
+
+
+/* Mobile responsive syling */
+@media (max-width: 480px) {
+    header h1{
+        font-size: 35px;
+    }
+
+    .web_overview{
+        padding: 20px;
+    }
+
+    .web_overview h1{
+        font-size: 30px;
+    }
+
+    .Sitem img{
+        width: 300px;
+    
+    }
+
+
+
+    .sample h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .videosample h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .web_overview article,
+    .serv_overvi_web article,
+    .technologies article,
+    .choose_us article,
+    .intouch article {
+        font-size: x-large;
+    }
+
+    .contact ul{
+        gap: 20px;
+    }
+
+}
+
+
+/* Tablet responsive syling */
+@media (min-width: 481px) and (max-width: 768px) {
+    header h1{
+        font-size: 43px;
+    }
+
+    .Sitem img{
+        width: 400px;
+    
+    }
+
+    .web_overview{
+        padding: 20px;
+    
+    }
+
+    .serv_overvi_web h1 {
+        font-size: 28px;
+    }
+
+    .sample h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .videosample h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .videoSitem{
+        display: flex;
+        align-items: center;
+    }
+
+ 
+}
+
+/* Desktop or Laptop responsive syling */
+@media (min-width: 769px) {
+    .Other-videoSitem{
+        height: 225px;
+        align-self: center;
+    
+    }
+}
